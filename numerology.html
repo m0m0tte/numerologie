@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>    
+   
+    <head>
+        <meta charset="utf-8">        
+        <title>Numérologie</title>
+        <meta name="description" content="A numerological engine">
+        <script src="numerology.js"></script>
+        <style>
+            .invisible{
+                display: none;
+            }
+            .visible{
+                display: block;
+            }
+        </style>
+    </head>
+    
+    <body>
+               
+        <div>
+           
+            <form>
+              <table>
+                  <tr>
+                      <td><label for="nom">Nom</label></td>
+                      <td><input type="text" id="nom" placeholder="Votre nom"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="prenom">Prenom</label></td>
+                      <td><input type = "text" id="prenom" placeholder="Votre prénom"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="date_naissance">Date de Naissance</label></td>
+                      <td><input type="date" id="date_naissance"></td>
+                  </tr>
+              </table>
+                <br>
+               <input type="button" value="Calculer mes chiffres !" onclick="calculer(event)">            
+            </form>
+          
+          <p id="p_recap" class="invisible">
+                     
+          </p>
+          
+          <p id="nb_1" class="invisible">
+                <img src="images/1.png" alt="numero 1"/><br>
+                <em>Volonté intense. Grandes facultés de réalisations et maîtrise de soi. Autoritarisme.</em> <br>                
+                Le 1 est le symbole de l'homme debout, le seul être de la création à posséder cette faculté. Il est symbole de l'homme actif, qui est associé aux résultats de la création. C'est également le lieu, le domicile de l'être, source et fin de toute chose, c'est un centre, en quelque sorte. Ce centre peut être mystique et rayonner comme un Soleil. Le 1 est une base, un point de départ. Il fait partie des symboles unificateurs, tout comme les symboles qui concilient les contraires, qui unissent les opposés.<br>
+                Ce nombre permet de réconcilier rationnel et irrationnel, intellect et imaginaire, réel et idéal, concret et abstrait. Si le zéro contenait tous les possibles à l'état caché, le 1 contient toutes les potentialités et manifestées. C'est la source, le point de départ, l'unité primordiale à l'origine de toute chose; le principe générateur de tout ce qui est. Doté d'une énergie considérable et masculine, le 1 est celui qui est à l'origine, le créateur, celui qui commande et dirige les autres, l'homme d'action, le pionnier, et, par extension, le tyran. Le début, le démarrage, mais aussi le renouveau, l'occasion de prendre un nouveau départ est contenu dans ce nombre. C'est parfois une période de direction et de responsabilité, toujours une phase très énergétique, mais souvent solitaire et difficile, fréquemment enviable. 
+          </p>
+          
+          <p id="nb_2" class="invisible">
+                <img src="images/2.png" alt="numero 2"/><br>
+                  <em>Unions, associations. Incite à se lier, à collaborer. Timidité.</em><br> 
+                  Le 2, tout comme le double, possède son symbolisme. Le 2, c'est l'opposition, les conflits, la réflexion, l'équilibre réalisé ou les menaces latentes, l'ambivalence et le doublement. Il est attribué à l'archétype de la Mère, au principe féminin. C'est l'involution désastreuse ou l'évolution créatrice, le dualisme où repose toute la dialectique. Le combat, le mouvement, le progrès, la division, la multiplication, la synthèse sont aussi attribués au 2, qui peut renforcer la valeur symbolique de ce qui l'entoure. Il peut également multiplier la puissance à l'infini. C'est le reflet, le double du 1. Le rythme binaire qui régit notre monde, est issu principe des contraires : jour et nuit, yin et yang, action et réaction, c'est la polarité et équilibre.<br> 
+                  Le 1 est l'homme, le 2 est la femme. Le deux est celui qui organise derrière celui qui dirige, le « brillant second »; personne équilibrée, sociable, diplomate, qui rassemble et assemble; mais c'est aussi le rêveur, l'utopiste, ce qui peut aller à l'indécision. Période de collaboration, d'association dans la vie privée et/ou professionnelle, il devrait être calme et équilibrée. Quelquefois sous domination féminine, ce nombre évoque aussi, dans son sens contraire, une phase de séparation. 
+          </p>     
+           
+          <p id="nb_3" class="invisible">
+              <img src="images/3.png" alt="numero 3"/><br>
+              <em>Sociabilité développée. Sens aigu de la communication. Bavard.</em><br> 
+              Le 3 exprime un ordre principalement intellectuel et spirituel en Dieu, dans l'Univers et dans l'homme. Un engendre deux qui engendre toutes choses : le 3 devient alors un support, un chiffre parfait, exprimant une certaine forme de totalité, d'achèvement. Il permet la perfection de l'unité divine, un achèvement de la manifestation, un accomplissement, une participation où la conscience est développée ce qui peut se traduire par des formes diverses de divination. Le 3 est une limite entre le favorable et le défavorable. Il se multiplie lui-même (1 engendre 2, etc.,) ce qui donne l'idée de l'inceste entre lui et sa chair. Le 3 est aussi symbole de la totalité de l'ordre social, c'est pourquoi il est bénéfique, si l'on suit cet ordre social. C'est le souffle de l'esprit qui va créer, et par le verbe s'exprimer et communiquer, le dynamisme créateur de vie et de mouvement. Et c'est aussi, pour le couple, c'est la venue de la troisième personne : l'enfant.<br> 
+              Le 3 est celui qui s'extériorise, qui s'exprime et communique le goût, l'harmonie et la beauté; c'est l'artiste, l'homme médiatique. Egalement le bavard, le clown, le brouillon, l'expression, la communication, la création, le mouvement de la vie, le 3 est avec le 5, une des meilleures périodes de l'existence. 
+          </p> 
+           
+           <p id="nb_4" class="invisible">
+                <img src="images/4.png" alt="numero 4"/><br>
+               <em>Réalisations concrètes. Stabilité. Sens de l'ordre. Rigide.</em><br> 
+               Depuis la préhistoire, le 4 est symbole de solide, palpable et perceptible. C'est un symbole totalisateur. Le 4 est l'archétype du pouvoir totalisateur, qui signifie l'étendue de ce pouvoir en apparence et l'étendue sur tous les actes de leurs sujets, (par ex. en parlant de rois, dirigeants, etc.,). Le 4 se rattache au carré et à la croix. Il symbolise la totalité, du créé, du révélé. En japonais, 4 est synonyme de mort. Ce nombre devrait demander du changement. Il se rattache à l'Univers dans sa totalité, au monde visible et matériel et à l'intégration de l'humain à ce monde. Il organise et représente une force à cette fin. C'est un nombre féminin. Il représente une potentialité, qui vient avec la manifestation du chiffre 5. Le 4, d'après C.G. Jung, se rapporte à la quaternité, le fondement de l'archétype de la psyché humaine, autrement dit, la totalité des processus psychiques conscients et inconscients, condition essentielle pour se rendre compte du reste du monde et de sa réalité. Le 4 est le nombre de la manifestation matérielle, soit la matière, le monde matériel, l'univers créé, la terre, la solidité, la dureté et aussi la limitation, le travail, le travailleur, l'homme pratique, solide, méthodique, ordonné, mais souvent limité. C'est encore le routinier, le maniaque ou la bête de somme, une période du travail, souvent de dureté et de limitation, mais qui permet de construire solidement. 
+           </p>
+            
+           <p id="nb_5" class="invisible">
+                <img src="images/5.png" alt="numero 5"/><br>
+               <em>Mobilité. Ouverture d'esprit. Facultés d'adaptation. Libertin.</em><br> 
+               Le 5, dans tous les divers symbolismes de cette planète, est la manifestation de l'homme, au terme d'une évolution biologique et spirituelle. Il désigne un acte, comme tous les chiffres impairs, les chiffres pairs indiquant un état. C'est le nombre de l'existence matérielle et objective, symbole de la vie manifestée. 5 est la somme de 2 + 3, il est aussi le milieu des 9 premiers nombres. C'est l'union, le centre de l'homme (bras écartés, celui-ci paraît composé de 5 parties en forme de croix), l'univers (avec ses deux axes, l'un horizontal, l'autre vertical, passant par un seul centre, soit la perfection). C'est la volonté divine qui ne peut que désirer l'ordre et la perfection. Les 5 sens et les 5 formes sensibles de la matière expriment la totalité du monde perceptible. Mais il peut aussi symboliser la création inachevée et devenir néfaste : il est associé aux dangereux échecs dont les fausses-couches et la mort. Le 5 peut être Cruel ou Créatif. La lettre C symbolise aussi un pouvoir de transmutation possible. L'homme qui s'intègre dans le monde matériel et qui va l'animer, c'est le 5, c'est L'homme avec ses cinq sens, avec la liberté de les utiliser pour chercher, expérimenter, combattre... et parfois se tromper.<br>  
+               Le cinq, c'est la vie, le combat, l'aventure, le changement, la liberté, la sensualité et la sexualité, l'aventurier, celui de toutes les aventures, physiques, affectives, spirituelles ou intellectuelles. C'est l'expérimentateur, le chercheur, l'homme ou la femme libre, ardent, entreprenant, audacieux magnétique et chanceux, aimant la vie et ses plaisirs. C'est l'imprudent, le coléreux, le dangereux, le temps de la liberté, des voyages, du changement, du combat et des aventures, le temps de la vie intense. 
+           </p> 
+           
+           <p id="nb_6" class="invisible">
+                <img src="images/6.png" alt="numero 6"/><br>
+               <em>Accord, vie commune, harmonie. Esprit conciliant. Intolérant.</em><br> 
+               Le 6 marque l'opposition de la créature au créateur, dans un certain équilibre, ce qui implique au 6 de se distinguer du créateur, ce qu'il pourra faire, peut-être en créant. Mais cette distinction est source d'ambivalence; il peut aussi bien se pencher vers le bien que vers le mal, vers l'union, mais aussi vers sa révolte. Il peut donc représenter une perfection qui peut se révéler. Il est donc une épreuve entre le bien et le mal. Le 6 est aussi attribué, surtout dans l'antiquité, à Vénus (Aphrodite), pour son pouvoir de donner forme. Il est médiateur entre la base, le principe et la manifestation de la création. Le 6 est la source de toutes choses intellectuelles et temporelles. Comme il intervient juste avant le 7, c'est donc un chemin de ce qui est manifesté à la conscience de ce qui est manifesté. Chez les Bambaras, le 6 est un symbole faste, signe des jumeaux mâles (3 + 3). La recherche de l'harmonie, de l'amour est indiqué par le six, celui de l'équilibre réalisé entre créateur et créé. Evolution, involution, donc choix, harmonie, musique, danse, amour, responsabilités familiales, communautaires, nationales, devoir et désintéressement sont le lot de nombre. C'est l'amoureux, le doux, le bon, l'aimant la beauté, mais parfois trop rêveur et trop sensible. Le 6 est l'homme responsable, parfois à un très haut niveau. C'est aussi le temps de l'amour, des responsabilités, de l'engagement
+           </p> 
+           
+           <p id="nb_7" class="invisible">
+                <img src="images/7.png" alt="numero 7"/><br>
+               <em>Vie intérieure. Profondeur d'analyse. Spiritualité. Manque de confiance.</em><br> 
+               Le 7 symbolise une transformation après un cycle accompli, suivi d'un renouveau positif. Son symbolisme laisse aller un certain libre arbitre, après la fin d'un cycle réussi. Le 7 symbolise aussi la totalité du temps, de l'espace et de l'univers en mouvement. C'est la culmination après 6 autres passages symboliques. Le 7ème jour, jour où Dieu laisse la responsabilité à l'homme, est aussi une culmination dynamique des 6 autres phases.<br> 
+               Le 7, entre autres, est un pacte et une totalité humaine, la perfection à une unité. C'est 4 + 3, 4 étant féminin et 3 masculin. Le 7 est une totalité des différents états de conscience, en bien comme en mal. L'homme à la recherche d'une relation avec son créateur, la liaison entre le divin et l'humain. La spiritualité, pouvant être évoquée par silence, mystère, méditation, le monde de la réflexion philosophie ou discussion. Le 3 du monde de l'Esprit s'ajoute au 4, monde de la matière, pour donner le 7. Le 7, c'est le mystique, le penseur, le philosophe, l'homme silencieux et secret. Quelquefois, c'est quelqu'un qui se cache, ou quelqu'un qui se rebelle, le temps de la méditation, de l'étude, de la réflexion et de la solitude ou du repos. 
+           </p> 
+           
+           <p id="nb_8" class="invisible">
+                <img src="images/8.png" alt="numero 8"/><br>
+               <em>Pouvoir. Réussite matérielle. Esprit d'entreprise. Manipulateur.</em><br> 
+               Huit est le nombre de l'équilibre cosmique, une médiation, qui se rapporte aux choses intermédiaires. C'est le nombre des directions cardinales, auquel s'ajoute celui des directions intermédiaires. On le retrouve lors des diffusions et propagandes, comme par ex., la politique et les affaires ou la publicité. Il concentre l'entité, l'innombrable. C'est la possibilité d'une sagesse infinie, aux formes innombrables, au centre de l'éducation, de l'effort spirituel et de toute recherche. Au-delà du 7ème jour vient le 8ème, qui marque la vie des justes et la condamnation des impurs. Le 8 correspond donc au renouveau. Le 8 couché est en mathématique le symbole de l'infini. La lame 8 du Tarot représente la justice. Ce nombre n'est maléfique que par son incompréhension et par une mauvaise utilisation de notre vie.<br> 
+               L'homme reprend la lutte avec le 8, et c'est le succès matériel : gains, argent, pouvoir. C'est donc le nombre des articulations, des passages, de la transformation, de la résurrection et du karma. C'est un nombre christique, la plénitude spirituelle du nombre 7 devenue matérielle. C'est l'homme d'affaires, d'argent et de pouvoir. C'est l'homme du succès, le gagneur, l'arriviste, autoritaire, dominateur, éventuellement malhonnête, et quelquefois l'homme acculé à la ruine. C'est encore le pouvoir, l'argent, l'originalité, le succès foudroyant ou la chute, ainsi que les problèmes financiers. 
+           </p> 
+           
+           <p id="nb_9" class="invisible">
+                <img src="images/9.png" alt="numero 9"/><br> 
+               <em>Altruisme, dévouement. Dépassement de soi. Achèvement. Hyperémotif.</em><br> 
+               Le nombre 9 semble être la mesure des gestations, des recherches fructueuses et il symbolise le couronnement des efforts, comme mener à terme une création. C'est la perfection de la perfection, l'ordre dans l'ordre, l'unité dans l'unité. Le Yang, tout comme la plénitude sont 9. Ce nombre est complet, car c'est le dernier des chiffres complets, il permet l'analyse des autres chiffres, c'est pourquoi il est l'achèvement, le temps complet. Il annonce une fin et un recommencement, une transposition sur un nouveau plan, donc l'idée de germination, de création d'autre chose, en même temps l'idée de mort, soit la fin de quelque chose, la fin d'un cycle. Le 9, c'est l'extension vers les autres. Le but est atteint, c'est la fin, l'aboutissement, la conclusion, la récompense des épreuves. C'est la plénitude des dons, les connaissances universelles et les vérités éternelles.<br> 
+               Avec le neuf, L'homme peut méditer, il peut aller vers les autres pour aider, soulager, enseigner. Le 9 est celui de l'expérience, l'altruiste et l'idéaliste, l'homme gâté par tous les dons qui joue la vedette mal vue. C'est un temps d'achèvement, de bilan, de la récolte, bonne ou mauvaise. Extension pour les uns, fin pour les autres, c'est la préparation au nouveau cycle.
+           </p>    
+           
+          <p id="actif" class="invisible">
+              <strong>Nombre Actif</strong>
+              <br>Il explique le rôle que joue le tempérament, ce qui est inné, dans votre personnalité.<br><br>
+          </p>
+          
+          <p id="hereditaire" class="invisible">
+             <strong>Nombre Héréditaire</strong>
+              <br>Il représente votre caractère, avec toutes ses composantes héréditaires, et vous éclaire sur votre comportement dans la relation avec les autres.<br><br>
+          </p>
+          
+          <p id="expression" class="invisible">
+             <strong>Nombre d'Expression</strong>
+              <br>Ce nombre représente votre tempérament et votre caractère.<br><br>
+          </p>
+          
+          <p id="intime" class="invisible">
+             <strong>Nombre Intime</strong>
+              <br>Ce nombre, dit aussi d'idéalité, symbolise vos capacités sous-jacentes, vos idéaux et vos rêves éclipsés.<br><br>
+          </p>
+          
+          <p id="realisation" class="invisible">
+             <strong>Nombre de Réalisation</strong>
+              <br>Ce nombre, dit aussi de structure, révèle vos talents sur un plan matériel et/ou professionnel. <br><br>
+          </p>
+          
+          <p id="initiales" class="invisible">
+             <strong>Nombre Issu des Initiales</strong>
+              <br>Ce nombre dévoile un trait dominant de votre personnalité. <br><br>
+          </p>
+          
+          <p id="evolution" class="invisible">
+             <strong>Nombre d'Evolution</strong>
+              <br>Il représente ce que vous pourriez devenir (ou auriez pu devenir). <br><br>
+          </p>
+          
+          <p id="vie" class="invisible">
+             <strong>Nombre de Vie</strong>
+              <br>Le chemin de vie est l'un des nombres les plus importants et courant en numérologie. Il vous informe essentiellement des obstacles qui vous attendent pendant votre vie et des moyens des les surmonter.<br><br>
+          </p>
+          
+          <p id="personnel" class="invisible">
+             <strong>Nombre Personnel</strong>
+              <br>Il permet de connaître le climat général de l'année en cours ou à venir.<br><br>
+          </p>
+ 
+          
+        </div>
+
+        
+        <script>
+            var calculer = function(event){
+                var nom = document.getElementById("nom").value;
+                var prenom = document.getElementById("prenom").value;
+                var date_naissance = document.getElementById("date_naissance").value;
+                var date_naiss = date_naissance.split("-");
+                var annee_naissance = date_naiss[0];
+                var mois_naissance = date_naiss[1];
+                var jour_naissance = date_naiss[2];
+                var myInstance = new NumerologyEngine(nom,prenom,jour_naissance,mois_naissance,annee_naissance);
+                console.log(myInstance.__proto__ === NumerologyEngine.prototype); 
+                
+                var body=document.getElementsByTagName("body")[0];
+                
+                var txt_infos_personne = document.createTextNode(prenom + " " + nom + ", cliquez sur vos chiffres pour connaître leur signification : ");
+                var infos_personne = document.getElementById("p_recap");
+                infos_personne.appendChild(txt_infos_personne);
+                infos_personne.className = 'visible';
+                
+            //Crée la liste des chiffres de la personne :
+                var p_liste_chiffres = document.createElement("p");
+                var ul_liste_chiffres = document.createElement("ul");
+                ul_liste_chiffres.id = "liste";
+                
+            // Crée un lien vers une page d'interprétation pour le nombre actif (ne marche que pour 1):
+                /*
+                var li_nb_actif = document.createElement("li");
+                var nb_actif = myInstance.getActiveNumber();
+                var a_nb_actif = document.createElement("a");
+                var txt_nb_actif = document.createTextNode("Nombre Actif : " + nb_actif)
+                a_nb_actif.appendChild(txt_nb_actif);
+                a_nb_actif.href = "nbactif_"+nb_actif+".html"; 
+                li_nb_actif.appendChild(a_nb_actif);
+                ul_liste_chiffres.appendChild(li_nb_actif);                        */               
+                
+                var li_nb_actif = document.createElement("li");
+                var nb_actif = myInstance.getActiveNumber();
+                var txt_nb_actif = document.createTextNode("Nombre Actif : " + nb_actif);
+                li_nb_actif.appendChild(txt_nb_actif);
+                ul_liste_chiffres.appendChild(li_nb_actif);
+                li_nb_actif.id = "li_actif";
+                
+                var li_nb_hereditaire = document.createElement("li");
+                var nb_hereditaire = myInstance.getHereditaryNumber();
+                var txt_nb_hereditaire = document.createTextNode("Nombre Héréditaire : " + nb_hereditaire);
+                li_nb_hereditaire.appendChild(txt_nb_hereditaire);
+                ul_liste_chiffres.appendChild(li_nb_hereditaire);
+                li_nb_hereditaire.id = "li_hereditaire";
+                
+                
+                var li_nb_expression = document.createElement("li");                
+                var nb_expression = myInstance.getExpressionNumber();
+                var txt_nb_expression = document.createTextNode("Nombre d'Expression : " + nb_expression);
+                li_nb_expression.appendChild(txt_nb_expression);
+                ul_liste_chiffres.appendChild(li_nb_expression);
+                li_nb_expression.id = "li_expression";
+                
+                var li_nb_intime = document.createElement("li");
+                var nb_intime = myInstance.getIntimacyNumber();
+                var txt_nb_intime = document.createTextNode("Nombre Intime : " + nb_intime);
+                li_nb_intime.appendChild(txt_nb_intime);
+                ul_liste_chiffres.appendChild(li_nb_intime);
+                li_nb_intime.id = "li_intime";
+                
+                var li_nb_realisation = document.createElement("li");
+                var nb_realisation = myInstance.getRealisationNumber();
+                var txt_nb_realisation = document.createTextNode("Nombre de Réalisation : " + nb_realisation);
+                li_nb_realisation.appendChild(txt_nb_realisation);
+                ul_liste_chiffres.appendChild(li_nb_realisation);
+                li_nb_realisation.id = "li_realisation";
+                
+                var li_nb_initiales = document.createElement("li");
+                var nb_initiales = myInstance.reduceFromInitialLetters();
+                var txt_nb_initiales = document.createTextNode("Nombre Issu des Initiales : " + nb_initiales);
+                li_nb_initiales.appendChild(txt_nb_initiales);
+                ul_liste_chiffres.appendChild(li_nb_initiales);
+                li_nb_initiales.id = "li_initiales";
+                
+                var li_nb_evolution = document.createElement("li");
+                var nb_evolution = myInstance.getEvolutionNumber();
+                var txt_nb_evolution = document.createTextNode("Nombre d'Evolution : " + nb_evolution);
+                li_nb_evolution.appendChild(txt_nb_evolution);
+                ul_liste_chiffres.appendChild(li_nb_evolution);
+                li_nb_evolution.id = "li_evolution";
+                
+                var li_nb_vie = document.createElement("li");
+                var nb_vie = myInstance.getLifeNumber();
+                var txt_nb_vie = document.createTextNode("Nombre de Vie : " + nb_vie);
+                li_nb_vie.appendChild(txt_nb_vie);
+                ul_liste_chiffres.appendChild(li_nb_vie);
+                li_nb_vie.id = "li_vie";
+                
+                var li_nb_personnel = document.createElement("li");
+                var nb_personnel = myInstance.getPersonalNumber();
+                var txt_nb_personnel = document.createTextNode("Nombre Personnel : " + nb_personnel);
+                li_nb_personnel.appendChild(txt_nb_personnel);
+                ul_liste_chiffres.appendChild(li_nb_personnel);
+                li_nb_personnel.id = "li_personnel";
+                
+                p_liste_chiffres.appendChild(ul_liste_chiffres);
+                document.body.appendChild(p_liste_chiffres);
+                
+            // Afficher la description du nombre au click :   
+                var afficher_description = function(evt){
+                    li_clique = evt.target.id;
+                    var nom_nb_clique = li_clique.split("_");
+                    var p_demande = document.getElementById(nom_nb_clique[1]);
+                    p_demande.className="visible";
+                }
+                               
+                var liste_nb = document.getElementById("liste");
+                var nb = liste_nb.getElementsByTagName("li");
+                for (i=0;i<nb.length;i++){
+                    nb[i].addEventListener('click',afficher_description,true);
+                }
+             
+                
+                /*
+                var tab = myInstance.getKarmicNumberTable(nom,prenom);
+                console.log("Table karmique : ");
+                for(var key in tab){
+                    console.log(tab[key]);
+                }
+                */
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>
